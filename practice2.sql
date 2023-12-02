@@ -1,0 +1,16 @@
+use birladb;
+select * from Customer;
+update Customer set Customer_city='jaipur';
+alter table Customer add Salary int;
+describe Customer;
+update Customer set Salary='239785697' where customer_id='1';
+update Customer set Salary='239785697' where customer_id='2';
+update Customer set Salary='2348376597' where customer_id='3';
+update Customer set Salary='239785697' where customer_id='4';
+update Customer set Salary='23285697' where customer_id='5';
+update Customer set Salary='239785697' where customer_id='6';
+update Customer set Salary='239785697' where customer_id='7';
+update Customer set Salary='236285697' where customer_id='8';
+update Customer set Salary='239785697' where customer_id='9';
+update Customer set Salary='244325697' where customer_id='10';
+delete from Customer where Customer_city='jaipur';
