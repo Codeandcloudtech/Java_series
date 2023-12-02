@@ -1,0 +1,30 @@
+import java.util.*;
+ class Palimdrom {
+    public  static void main(String [] arg){
+        System.out.println("ENTER AN INTEGER");
+        int num;
+        int min = 11;
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextInt();
+        if( num <11  )
+            System.out.println("INVALID INPUT");
+        else {
+            System.out.println("Input Number is:  " + num);
+            System.out.println("palindrome numbers starting from 11 up to "+num +" is");
+            countPal(min,num) ;
+        }
+        }
+    static int isPalimdrom(int n)
+    {
+        int rev = 0;
+        for (int i = n; i > 0; i /= 10)
+            rev = rev * 10 + i % 10;
+        return(n == rev) ? 1 : 0;
+    }    
+    static void countPal(int min, int max)
+    {
+        for (int i = min; i <= max; i++)
+            if (isPalimdrom(i)==1)
+            System.out.println(i+" ");
+    }
+}
