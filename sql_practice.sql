@@ -1,0 +1,14 @@
+create database UserAssignment1;
+create table Customer(Customer_id varchar (6),Firstname varchar (15),Lastname varchar (15),Middlename varchar (15),Customer_city varchar (20),Customer_contact_no varchar (10),Occupation varchar (20),Customer_date_of_birth DATE);
+insert into Customer values('1','noni','pura','S','udaipur','8936787','student',1999-02-19);
+insert into Customer values('2','pushpa','tomar','S','jaiipur','09096787','housewifi',2000-02-01);
+insert into Customer values('3','a','r','S','udhaipur','07823587','engineer',2000-02-01);
+insert into Customer values('4','r','op','S','pushkar','09021475','student',"2000-02-01");
+insert into Customer values('5','manna','aggarwal','S','mumbai','3486328','marketing',"2000-02-01");
+insert into Customer values('6','rahul','verma','S','delhi','09096787','jwelery',"2010-07-21");
+insert into Customer values('7','nimi','sharma','S','jodhpur','09096787','student',"1980-02-01");
+insert into Customer values('8','komal','tr','S','karnal','09096787','engineer',"1999-03-08");
+insert into Customer values('9','nishit','tomar','S','udaipur','09096787','student',"2000-02-01");
+insert into Customer values('10','Rizwan','mohammad','S','kota','09096787','civil service',"1990-08-10");
+select * from Customer where Customer_id=5;
+select * from Customer;
